@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bezkoder</groupId>
-	<artifactId>spring-boot-jdbctemplate-mysql</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>app</artifactId>
+	<version>awseksdemo</version>
 	<name>spring-boot-jdbctemplate-mysql</name>
 	<description>Spring Boot JDBCTemplate CRUD example with MySQL Database - Rest API</description>
 	<properties>

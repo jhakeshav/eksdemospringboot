@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tagfact-springboot
+  name: awseks-demo
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: tagfact-springboot
+      app: awseks-demo
   template:
     metadata:
       labels:
-        app: tagfact-springboot
+        app: awseks-demo
     spec:
       containers:
         - name: springboot
-          image: keshav/tagfact-docker-demo:tagfact-docker-demo
+          image: glocalmind/awseksdemo:demo1
           ports:
             - containerPort: 8080
           env:
@@ -24,11 +24,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: tagfact-springboot
+  name: awseks-demo
 spec:
   type: LoadBalancer
   ports:
     - port: 80
       targetPort: 8080
   selector:
-    app: tagfact-springboot
+    app: awseks-demo
