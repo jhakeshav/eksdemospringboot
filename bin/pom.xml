@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.bezkoder</groupId>
 	<artifactId>app</artifactId>
-	<version>springbootdemoeks</version>
+	<version>awseksdemo</version>
 	<name>spring-boot-jdbctemplate-mysql</name>
 	<description>Spring Boot JDBCTemplate CRUD example with MySQL Database - Rest API</description>
 	<properties>
