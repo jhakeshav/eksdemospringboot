@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  tagfact-springboot-container:
+    image: tagfact-spring-boot-docker-compose:1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/tagfact-springboot-container
+    ports:
+      - "8080-8100:8080"
